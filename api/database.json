@@ -1,0 +1,18 @@
+{
+  "legos": [
+    {
+      "id": 1,
+      "creator": "a",
+      "color": "n",
+      "shape": "n",
+      "creation": "n"
+    },
+    {
+      "id": 2,
+      "creator": "Bob",
+      "color": "blue",
+      "shape": "fat",
+      "creation": "mike"
+    }
+  ]
+}
