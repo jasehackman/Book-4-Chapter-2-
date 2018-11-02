@@ -13,6 +13,46 @@
       "color": "blue",
       "shape": "fat",
       "creation": "mike"
+    },
+    {
+      "creator": "",
+      "color": "",
+      "shape": "",
+      "creation": "",
+      "id": 3
+    },
+    {
+      "creator": "sdf",
+      "color": "lkj",
+      "shape": "ljk",
+      "creation": "lj",
+      "id": 4
+    },
+    {
+      "creator": "sdf",
+      "color": "lkj",
+      "shape": "ljk",
+      "creation": "lj",
+      "id": 5
+    },
+    {
+      "creator": "",
+      "color": "red",
+      "shape": "",
+      "creation": "",
+      "id": 6
+    },
+    {
+      "creator": "",
+      "color": "blue",
+      "shape": "",
+      "creation": "",
+      "id": 7
     }
+  ],
+  "color": [
+    "red",
+    "blue",
+    "green"
   ]
 }

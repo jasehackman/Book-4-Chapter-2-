@@ -21,13 +21,14 @@ document.querySelector(".btn").addEventListener("click", event => {
  
 // Once you have collected all the values, build your data structure
   const legoToSave = {
-      id: newid++,
+      // id: newid++,
       creator: newCreator,
       color: newColor,
       shape: newShape,
       creation: newCreation
 
   }
+  console.log(legoToSave);
 
   fetch("http://localhost:8088/legos", {
     method: "POST",
@@ -39,7 +40,23 @@ document.querySelector(".btn").addEventListener("click", event => {
 
 
   newObjArray.push(legoToSave);
-  console.log(legoToSave);
+ 
 })
 
+let ffetch = () => {
+  return fetch("http://localhost:8088/color")
+  .then ( data => data.json())
+}
 
+let elementBuilder = (data) => {
+  let builder;
+  data.forEach(x => {
+    builder += `<option value = "${x}">${x}</option>`
+  });
+  return builder;
+}
+
+let theSpot = document.getElementById("lego__color");
+
+
+ffetch().then(data => theSpot.innerHTML=elementBuilder(data))
